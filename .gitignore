@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+model.pkl
+enc_product.pkl
+enc_category.pkl
+Grocery_Inventory_and_Sales_Dataset.csv
+venv/
+.env
+.DS_Store
