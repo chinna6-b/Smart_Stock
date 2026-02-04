@@ -8,8 +8,8 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.preprocessing import LabelEncoder
 
 # YOUR FIXED PATHS
-CSV_PATH    = r"C:\Users\chinna\OneDrive\Desktop\inventory\Grocery_Inventory_and_Sales_Dataset.csv"
-SAVE_FOLDER = r"C:\Users\chinna\OneDrive\Desktop\inventory\sales-predictor"
+CSV_PATH    = r"Grocery_Inventory_and_Sales_Dataset.csv"
+SAVE_FOLDER = r"sales-predictor"
 # Auto-create folder
 os.makedirs(SAVE_FOLDER, exist_ok=True)
 print(f"Folder ready: {SAVE_FOLDER}")
@@ -56,4 +56,5 @@ joblib.dump(le_category, os.path.join(SAVE_FOLDER, "enc_category.pkl"))
 print("\nMODEL SAVED SUCCESSFULLY!")
 print("="*60)
 print(f"R² Score = {model.score(X_test, y_test):.4f}")
+
 print("="*60)
